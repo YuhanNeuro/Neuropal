@@ -33,6 +33,21 @@ Vous pouvez également retrouver a ce lien une vidéo explicative de ce qu'est l
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Nous pouvons également produire des documents récapitulatif tel que présenter ci-dessous : 
 
 
