@@ -28,6 +28,9 @@ https://github.com/YuhanNeuro/Neuropal/assets/158830789/65f1ecff-b23e-4f7e-ab48-
 
 L'objectif principal de cet outil est de soutenir les personnes atteintes de maladies neurodégénératives. Toutefois, il vise également à alléger la charge des aidants quotidiens, sans pour autant les remplacer complètement.
 
+Vous pouvez également retrouver a ce lien une vidéo explicative de ce qu'est le projet Neuropal : https://youtu.be/npo0TsgFue4
+
+
 
 
 Nous pouvons également produire des documents récapitulatif tel que présenter ci-dessous : 
