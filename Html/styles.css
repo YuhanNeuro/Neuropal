@@ -1,0 +1,532 @@
+/*Home*/
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #ecf0f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  color: #333;
+  width: 100%; /* Assure que le container prend toute la largeur */
+  max-width: 1200px; /* Largeur maximale du container */
+  margin: 0 auto; /* Centrer le container dans la page */
+}
+
+.header {
+  position: fixed; /* Fixe le header en haut de la page */
+  top: 0;
+  left: 0;
+  right: 0; /* Ajouté pour centrer le header */
+  width: 100%; /* Largeur complète */
+  height: 180px; /* Hauteur du header, ajustez selon vos besoins */
+  z-index: 200; /* S'assure que le header reste au-dessus des autres éléments */
+  text-align: center; /* Centrer le contenu du header */
+}
+
+/* Ajouter un contenu centré pour le logo à l'intérieur du header */
+.header img {
+  width: auto; /* ou votre largeur spécifique pour le logo */
+  height: 150px; /* ou votre hauteur spécifique pour le logo */
+  margin: 0 auto; /* Centrer le logo dans le header */
+}
+
+.grid {
+  padding-top: 60px; /* Espace pour le header, ajustez selon la hauteur réelle du header */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ... vos autres styles ... */
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr; /* Ajustement pour les mobiles */
+  }
+
+  .grid-item {
+    margin-bottom: 15px;
+  }
+}
+
+.tagline {
+  font-size: 16px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white; /* Fond blanc pour les icônes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+.icon-image {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.icon-label {
+}
+
+.memo {
+  background-color: #5755FF;
+}
+
+.medicaments {
+  background-color: #FFA042;
+}
+
+.calendrier {
+  background-color: #41C3A9;
+}
+
+.rapports {
+  background-color: #FF6A70;
+}
+
+.footer {
+  font-size: 12px;
+  color: #7f8c8d;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr; /* Ajuster pour les mobiles */
+  }
+
+  .grid-item {
+    margin-bottom: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*Memo*/
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav button {
+  margin: 0 10px;
+}
+
+.top-right-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+}
+
+.task-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.task {
+  border: 1px solid #ccc;
+  padding: 10px;
+  position: relative;
+}
+
+.task .task-checkmark {
+  position: absolute;
+  left: -20px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+#back-button {
+  background: grey;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+}
+
+
+
+.task {
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  padding: 10px;
+  position: relative;
+  background-color: #f0f0f0; /* Couleur clair par défaut */
+  margin-bottom: 10px;
+}
+
+.task[data-state="done"] {
+  background-color: #d0d0d0; /* Couleur grisé quand la tâche est faite */
+}
+
+.task-checkmark {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; /* Rond par défaut */
+  position: absolute;
+  top: 50%;
+  left: -30px; /* Ajustez en fonction de votre design */
+  transform: translateY(-50%);
+}
+
+.task[data-state="done"] .task-checkmark {
+  background-color: green; /* Case verte quand la tâche est faite */
+}
+
+.task:not([data-state="done"]) .task-checkmark {
+  background-color: red; /* Case carré rouge quand la tâche n'est pas faite */
+  border-radius: 0; /* Carré */
+}
+
+
+
+
+/*Medicaments*/
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 200px;
+}
+.card-header {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+.card-body {
+  padding: 10px;
+}
+.card-body p {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.card-body p:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-color: green;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px green;
+}
+.icon-row {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+.icon {
+  background-color: #007bff;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+}
+.date-detail {
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Calendrier*/
+
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.icons a {
+  text-decoration: none;
+  font-size: 2rem;
+  margin-left: 10px;
+}
+
+main .calendar {
+  margin: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.days,
+.dates {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.days li,
+.dates li {
+  flex-grow: 1;
+  border-right: 1px solid #ddd;
+}
+
+.days li:last-child,
+.dates li:last-child {
+  border-right: none;
+}
+
+.dates li {
+  padding: 15px 0;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+
+#current-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#current-date button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#current-date span {
+  margin-left: 10px;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  .card {
+    width: 45%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 20px;
+  }
+  .card-header {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    padding: 8px;
+    background-color: #eee;
+    border: none;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  li:hover {
+    background-color: #ddd;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #e74c3c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Rapports*/
+
+
+
+
+
+
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  .card {
+    width: 45%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 20px;
+  }
+  .card-header {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    padding: 8px;
+    background-color: #eee;
+    border: none;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  li:hover {
+    background-color: #ddd;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #e74c3c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  

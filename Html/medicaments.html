@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medicaments</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 200px;
+  }
+  .card-header {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .card-body {
+    padding: 10px;
+  }
+  .card-body p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  .card-body p:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: green;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px green;
+  }
+  .icon-row {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  .icon {
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+  }
+  .date-detail {
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <!-- Carte Médicaments -->
+    <div class="card">
+      <div class="card-header">
+        Médicaments
+      </div>
+      <div class="card-body">
+        <p>Med1</p>
+        <p>Med2</p>
+        <p>Med3</p>
+        <p>Med4</p>
+      </div>
+    </div>
+
+    <!-- Autres cartes ici... -->
+    <!-- Répétez la structure pour 'Quantité', 'Quand' et 'Durée' en ajustant le contenu selon l'image -->
+
+  </div>
+  <div class="icon-row">
+    <!-- Icônes ici -->
+    <div class="icon">↩️</div>
+    <div class="icon">🏠</div>
+    <div class="icon">🎙️</div>
+  </div>
+  <div class="date-detail">
+    Date_détail
+  </div>
+</body>
+</html>
