@@ -1,0 +1,533 @@
+
+  
+  /* Page Home */
+
+
+  body{
+    background: radial-gradient(#ffffff, #86868e);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+    .header img{
+      width: 100%;
+      height: 50vh;
+    }
+
+  .container-home {
+      position: fixed;
+      top: 50px;
+      right: 50px;
+  }
+
+  .mon-bouton-home {
+      background:url(C:\Users\marti\Desktop\NeuroPal_Global\Interface\NeuroPal_interface_24_img\icones\icon_home.png) no-repeat;
+      cursor:pointer;
+      width: 100px;
+      height: 100px;
+      border: none;
+      transition: background-color 0.3s ease;
+      border-radius: 50px;
+  }
+
+  .mon-bouton-taille-home img{
+    width: 100px;
+    height: 100px;
+}
+
+.container-off {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+.mon-bouton-off {
+  background:url(C:\Users\marti\Desktop\NeuroPal_Global\Interface\NeuroPal_interface_24_img\icones\icon_power.png) no-repeat;
+  cursor:pointer;
+  width: 100px;
+  height: 100px;
+  border: none;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+}
+
+.mon-bouton-taille-off img{
+width: 100px;
+height: 100px;
+}
+
+  /* Page Loader */
+
+
+  * {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  :root {
+    --hue: 223;
+    --bg: hsl(var(--hue),90%,90%);
+    --fg: hsl(var(--hue),90%,10%);
+    --primary: hsl(var(--hue),90%,50%);
+    --trans-dur: 0.3s;
+    font-size: calc(16px + (32 - 16) * (100vw - 320px) / (2560 - 320));
+  }
+  body {
+    background-color: var(--bg);
+    color: var(--fg);
+    display: flex;
+    font: 1em/1.5 sans-serif;
+    height: 100vh;
+    transition:
+      background-color var(--trans-dur),
+      color var(--trans-dur);
+  }
+  .bike {
+    display: block;
+    margin: auto;
+    width: 16em;
+    height: auto;
+  }
+  .bike__body,
+  .bike__front,
+  .bike__handlebars,
+  .bike__pedals,
+  .bike__pedals-spin,
+  .bike__seat,
+  .bike__spokes,
+  .bike__spokes-spin,
+  .bike__tire {
+    animation: bikeBody 3s ease-in-out infinite;
+    stroke: var(--primary);
+    transition: stroke var(--trans-dur);
+  }
+  .bike__front {
+    animation-name: bikeFront;
+  }
+  .bike__handlebars {
+    animation-name: bikeHandlebars;
+  }
+  .bike__pedals {
+    animation-name: bikePedals;
+  }
+  .bike__pedals-spin {
+    animation-name: bikePedalsSpin;
+  }
+  .bike__seat {
+    animation-name: bikeSeat;
+  }
+  .bike__spokes,
+  .bike__tire {
+    stroke: currentColor;
+  }
+  .bike__spokes {
+    animation-name: bikeSpokes;
+  }
+  .bike__spokes-spin {
+    animation-name: bikeSpokesSpin;
+  }
+  .bike__tire {
+    animation-name: bikeTire;
+  }
+
+  /* Dark theme */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: hsl(var(--hue),90%,10%);
+      --fg: hsl(var(--hue),90%,90%);
+    }
+  }
+
+  /* Animations */
+  @keyframes bikeBody {
+    from { stroke-dashoffset: 79; }
+    33%,
+    67% { stroke-dashoffset: 0; }
+    to { stroke-dashoffset: -79; }
+  }
+  @keyframes bikeFront {
+    from { stroke-dashoffset: 19; }
+    33%,
+    67% { stroke-dashoffset: 0; }
+    to { stroke-dashoffset: -19; }
+  }
+  @keyframes bikeHandlebars {
+    from { stroke-dashoffset: 10; }
+    33%,
+    67% { stroke-dashoffset: 0; }
+    to { stroke-dashoffset: -10; }
+  }
+  @keyframes bikePedals {
+    from {
+      animation-timing-function: ease-in;
+      stroke-dashoffset: -25.133;
+    }
+    33%,
+    67% {
+      animation-timing-function: ease-out;
+      stroke-dashoffset: -21.991;
+    }
+    to {
+      stroke-dashoffset: -25.133;
+    }
+  }
+  @keyframes bikePedalsSpin {
+    from { transform: rotate(0.1875turn); }
+    to { transform: rotate(3.1875turn); }
+  }
+  @keyframes bikeSeat {
+    from { stroke-dashoffset: 5; }
+    33%,
+    67% { stroke-dashoffset: 0; }
+    to { stroke-dashoffset: -5; }
+  }
+  @keyframes bikeSpokes {
+    from {
+      animation-timing-function: ease-in;
+      stroke-dashoffset: -31.416;
+    }
+    33%,
+    67% {
+      animation-timing-function: ease-out;
+      stroke-dashoffset: -23.562;
+    }
+    to {
+      stroke-dashoffset: -31.416;
+    }
+  }
+  @keyframes bikeSpokesSpin {
+    from { transform: rotate(0); }
+    to { transform: rotate(3turn); }
+  }
+  @keyframes bikeTire {
+    from {
+      animation-timing-function: ease-in;
+      stroke-dashoffset: 56.549;
+      transform: rotate(0);
+    }
+    33% {
+      stroke-dashoffset: 0;
+      transform: rotate(0.33turn);
+    }
+    67% {
+      animation-timing-function: ease-out;
+      stroke-dashoffset: 0;
+      transform: rotate(0.67turn);
+    }
+    to {
+      stroke-dashoffset: -56.549;
+      transform: rotate(1turn);
+    }
+  }
+
+
+
+
+  /* Page Menu */
+
+
+#Menu{
+  position: fixed;
+  top: 50px;
+  right: 50%;
+  height: 35vh;
+  transform: translateX(50%);
+}
+
+
+.grid {
+  padding-top: 60px; /* Espace pour le header, ajustez selon la hauteur réelle du header */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr; /* Ajustement pour les mobiles */
+  }
+
+  .grid-item {
+    margin-bottom: 20px;
+  }
+}
+
+.tagline {
+  font-size: 16px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; /* S'assure que le header reste au-dessus des autres éléments */
+  text-align: center;
+}
+
+.grid-item {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white; /* Fond blanc pour les icônes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+.icon-image {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+
+.memo {
+  background-color: #5755FF;
+}
+
+.medicaments {
+  background-color: #FFA042;
+}
+
+.calendrier {
+  background-color: #41C3A9;
+}
+
+.rapports {
+  background-color: #FF6A70;
+}
+
+
+ /* Page Memo */
+
+.rond-bleu{
+  height: 25px;
+  width: 25px;
+  background-color: #1f1bf9;
+  border-radius: 50%;
+  display: flex;
+  padding: 450px 450px;
+  position: fixed;
+  bottom: -450px;
+  left: -350px;
+  z-index: 1;
+}
+
+
+.Memo-page{
+  text-align: left;
+  padding: 10px 10px;
+  font-weight: bold;
+  position: fixed;
+  bottom: 20px;
+  left: 82px;
+  color: #ffffff;
+  z-index: 2;
+}
+
+
+.container-icon-left-desabled {
+  position: fixed;
+  top: 75px;
+  left: 50px;
+}
+
+.mon-bouton-icon-left-desabled {
+  background:url(C:\Users\marti\Desktop\NeuroPal_Global\Interface\NeuroPal_interface_24_img\icones\icon_home.png) no-repeat;
+  cursor:pointer;
+  width: 50px;
+  height: 50px;
+  border: none;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+}
+
+.mon-bouton-taille-icon-left-desabled img{
+width: 75px;
+height: 75px;
+}
+
+
+.container-icon-right {
+  position: fixed;
+  top: 75px;
+  left: 450px;
+}
+
+.mon-bouton-icon-right {
+  background:url(C:\Users\marti\Desktop\NeuroPal_Global\Interface\NeuroPal_interface_24_img\icones\icon_home.png) no-repeat;
+  cursor:pointer;
+  width: 50px;
+  height: 50px;
+  border: none;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+}
+
+.mon-bouton-taille-icon-right img{
+width: 75px;
+height: 75px;
+}
+
+
+.bar-under-text{
+  height: 1px;
+  width: 25px;
+  background-color: #0f0d8c;
+  border-radius: 0%;
+  display: flex;
+  padding: 1px 300px;
+  position: fixed;
+  top: 165px;
+  left: 0px;
+}
+
+
+.title-memo-page{
+  text-align: left;
+  padding: 10px 10px;
+  font-weight: regular;
+  position: fixed;
+  top: 70px;
+  left: 225px;
+  color: #000000;
+  font-size: 40px
+}
+
+
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr; /* Ajustement pour les mobiles */
+  }
+
+  .grid-item {
+    margin-bottom: 20px;
+  }
+}
+
+.tagline {
+  font-size: 16px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  z-index: 199; 
+  text-align: center;
+  grid-auto-rows: minmax(50px, auto);
+}
+
+.gridMemo {
+  padding: 20px 20px 20px 0;
+  border-radius: 10px;
+  background-color: white; /* Fond blanc pour les icônes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  font-size: 14px;
+  color: #111010;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid #0f0d8c;
+  z-index: 200;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.gridMemo:hover {
+  transform: scale(1.05);
+}
+
+.labelMemo {
+  margin: 0px;
+  padding: 0;
+  line-height: 1;
+}
+
+/* checkbox circle / Card Left */
+.gridMemo .checkbox{
+  display: none;
+}
+.gridMemo .label{
+  position: relative;
+  font-family:sans-serif;
+  display: block;
+  padding-left: 60px;
+  font-size: 22px;
+  user-select: none;
+  margin: 5px 5px;  
+}
+.gridMemo .check-mark{
+  width: 30px;
+  height: 30px;
+  background-color: #E9F1FA ;
+  position: absolute;
+  left:0;
+  display: inline-block;
+  top: 0;
+  border-radius: 50%;
+}
+ .gridMemo .label .checkbox:checked + .check-mark{
+  background-color: #9691F4  ;
+  transition: .1s;
+}
+.gridMemo .label .checkbox:checked + .check-mark:after{
+  content: "";
+  position: absolute;
+  width: 10px;
+    transition: .1s;
+  height: 5px;
+  background: #9691F4  ;
+  top:45%;
+  left:50%;
+  border-left: 2px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: translate(-50%, -50%) rotate(-45deg);  
+}
+
+
+
+.container-memo-logo {
+  position: fixed;
+  bottom: 32px;
+  left: 25px;
+}
+
+.memo-logo {
+  background:url(C:\Users\marti\Desktop\NeuroPal_Global\Interface\NeuroPal_interface_24_img\icones\memo.png) no-repeat;
+  cursor:pointer;
+  width: 50px;
+  height: 50px;
+  border: none;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+  z-index: 6;
+}
+
+.memo-logo-dim img{
+width: 55px;
+height: 55px;
+}
