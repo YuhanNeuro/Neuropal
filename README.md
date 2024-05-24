@@ -70,6 +70,11 @@ Nous pouvons également produire des documents récapitulatif tel que présenter
 
 ![Profil Détails (3)](https://github.com/YuhanNeuro/Neuropal/assets/158830789/ecae61f1-2039-449f-9e23-69c877691c4e)
 
+
+
+
+Ce dernier formulaire est généré automatiquement tous les jours suivant les retranscriptions audio de la veille
+
 ![Profil Détails (2)](https://github.com/YuhanNeuro/Neuropal/assets/158830789/337053e7-638e-49ea-8476-ef0d17d55cdc)
 
 
