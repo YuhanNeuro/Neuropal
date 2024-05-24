@@ -48,6 +48,19 @@ Vous pouvez également retrouver a ce lien une vidéo explicative de ce qu'est l
 
 
 
+Cette outil peut se récapitulé en 2 schémas de système : 
+
+ 1 - Ce premier système permet de centraliser et de structurer des informations essentielles pour améliorer la qualité de vie des personnes atteintes d'Alzheimer et de ses aidants en intégrant des données multimodales (audio et GPS) et en les analysant pour fournir des informations utiles et pertinentes.
+
+ ![7](https://github.com/YuhanNeuro/Neuropal/assets/158830789/cffaf100-8f69-4061-b42a-942b5ae887b3)
+
+ 2 - Ce second système permet de capturer des conversations audio en directe, de les transcrire et de les analyser pour en extraire des informations importantes, puis de générer des réponses vocales appropriées, améliorant ainsi la communication et le suivi des besoins des utilisateurs atteints d'Alzheimer.
+
+ ![8](https://github.com/YuhanNeuro/Neuropal/assets/158830789/53b50247-26fc-46f6-be51-34a9b7cc7b1f)
+
+
+
+
 Nous pouvons également produire des documents récapitulatif tel que présenter ci-dessous : 
 
 
