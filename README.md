@@ -89,12 +89,6 @@ Concernant le script Python pour l'interaction en temps réel, les commandes ini
 
 Le système est conçu pour fonctionner hors ligne, garantissant ainsi la sécurité des données. En termes de spécifications techniques requises, ce système nécessite au minimum un ordinateur équipé d'un processeur i7 de 11ème génération ou supérieur, ainsi que 8 Go de RAM.
 
-Voici un schéma du pipeline de traitement qui permet à l'IA de collecter des informations sur le patient afin d'optimiser et d'adapter en continu la pertinence de l'interaction.
-
-
-![ArchiTraitement](https://github.com/YuhanNeuro/Neuropal/assets/158830789/944b9357-352a-4778-b355-463887a74fab)
-
-
 
 
 
