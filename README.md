@@ -13,7 +13,7 @@ Vous trouverez ci-dessous une courte vidéo présentant son interface :
 
 https://github.com/YuhanNeuro/Neuropal/assets/158830789/65f1ecff-b23e-4f7e-ab48-062b5ba60382
 
-
+https://github.com/user-attachments/assets/0c85811e-395e-4ccf-aa51-b5c53364be41
 
 
 
@@ -78,6 +78,10 @@ Ce dernier formulaire est généré automatiquement tous les jours suivant les r
 
 
 ![Profil Détails](https://github.com/YuhanNeuro/Neuropal/assets/158830789/db523b0d-a37c-4068-8b0f-f795f6ef9503)
+
+
+
+
 
 
 
