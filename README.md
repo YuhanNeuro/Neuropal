@@ -61,23 +61,7 @@ Cette outil peut se récapitulé en 2 schémas de système :
 
 
 
-Nous pouvons également produire des documents récapitulatif tel que présenter ci-dessous : 
 
-
-![Profil court](https://github.com/YuhanNeuro/Neuropal/assets/158830789/3d117ba0-f069-405a-9392-86d860eb9665)
-
-![Profil Détails](https://github.com/YuhanNeuro/Neuropal/assets/158830789/ba3a5378-45f2-4f15-9751-ff43c7c418e3)
-
-![Profil Détails (2)](https://github.com/YuhanNeuro/Neuropal/assets/158830789/1e4a06ea-fba8-49bf-9f6c-c25ee9a5d5a1)
-
-
-
-
-
-Ce dernier formulaire est généré automatiquement tous les jours suivant les retranscriptions audio de la veille
-
-
-![Profil Détails](https://github.com/YuhanNeuro/Neuropal/assets/158830789/db523b0d-a37c-4068-8b0f-f795f6ef9503)
 
 
 
