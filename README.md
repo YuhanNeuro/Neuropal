@@ -2,21 +2,19 @@
 
 
 
-Neuropal est un assistant digital qui opère principalement par la collecte de données audio, éliminant ainsi le besoin d'entrées manuelles pour les tâches et les événements. 
-Tout est automatisé et chaque composant du système peut être mis à jour idépendament. 
-Grâce à l'utilisation de LM Studio, les utilisateurs peuvent personnaliser leur système et télécharger d'autres modèles selon la capacité et les besoins de chaque utilisateur.
+Neuropal est un logiciel autonome qui capte en continu les données audio afin d’en extraire toutes les informations utiles à votre organisation quotidienne.
+Il remplace dictaphones, post-it et autres rappels manuels pour la gestion de vos tâches et événements.
+
+Entièrement automatisé, il suffit d’un bouton on/off. Le système fonctionne sans aucune connexion réseau, garantissant une confidentialité absolue. 
 
 
 
 
-Vous trouverez ci-dessous une courte vidéo présentant son interface :
-
-https://github.com/YuhanNeuro/Neuropal/assets/158830789/65f1ecff-b23e-4f7e-ab48-062b5ba60382
-
-https://github.com/user-attachments/assets/0c85811e-395e-4ccf-aa51-b5c53364be41
+Vous trouverez ci-dessous une vidéo présentant Neuropal :
 
 
 
+https://www.youtube.com/watch?v=Mclu7SeLy9M
 
 
 
