@@ -21,40 +21,15 @@ https://www.youtube.com/watch?v=Mclu7SeLy9M
 
 
 
-
-
-
-L'objectif principal de cet outil est de soutenir les personnes atteintes de maladies neurodégénératives. Toutefois, il vise également à alléger la charge des aidants quotidiens, sans pour autant les remplacer complètement.
-
-Vous pouvez également retrouver a ce lien une vidéo explicative de ce qu'est le projet Neuropal : https://youtu.be/npo0TsgFue4
-
-
-
-  
-
-  
-  
-
-
-  
-
-  
-
-  
-
   
 
 
 
-Cette outil peut se récapitulé en 2 schémas de système : 
+Le fonctionnement de cet outil peut se récapitulé un schéma système : 
 
- 1 - Ce premier système permet de centraliser et de structurer des informations essentielles pour améliorer la qualité de vie des personnes atteintes d'Alzheimer et de ses aidants en intégrant des données multimodales (audio et GPS) et en les analysant pour fournir des informations utiles et pertinentes.
 
- ![7](https://github.com/YuhanNeuro/Neuropal/assets/158830789/cffaf100-8f69-4061-b42a-942b5ae887b3)
 
- 2 - Ce second système permet de capturer des conversations audio en directe, de les transcrire et de les analyser pour en extraire des informations importantes, puis de générer des réponses vocales appropriées, améliorant ainsi la communication et le suivi des besoins des utilisateurs atteints d'Alzheimer.
-
- ![8](https://github.com/YuhanNeuro/Neuropal/assets/158830789/53b50247-26fc-46f6-be51-34a9b7cc7b1f)
+![schem](https://github.com/user-attachments/assets/7d93b0a1-325e-4b20-b0b8-3871fe7a364c)
 
 
 
@@ -68,19 +43,16 @@ Cette outil peut se récapitulé en 2 schémas de système :
 
 
 
+ 
 
+Tout est conçu pour fonctionner hors ligne, garantissant ainsi la sécurité des données total.
+En termes de spécifications techniques requises, ce logiciel nécessite une puissance de calcul importante. 
+Exemple d'ordinateur ayant une puissance adéquate ainsi qu'une reserve pour les prochaines évolutions : 
 
-Cependant, la collecte approfondie de données est prohibée par l'Acte Européen sur l'IA (Article 34G). C'est pourquoi le script Python d'extraction et de compilation des données n'est pas disponible sur cette page. 
+- Microsoft Surface Laptop Studio 2 (avec GPU NVIDIA RTX 4050 / 4060 / 2000 Ada)
 
-Un autre élément a également dû être retiré, la diarisation des voix, qui permettait d'identifier les propos de chaque intervenant. 
-Cette technique impliquait la collecte de nombreuses données biométriques sans le consentement explicite des personnes concernées. 
+- ASUS ROG Flow Z13 (modèles 2023/2024 avec GPU RTX 4050 ou 4060 intégré)
 
-Cette limitation peut affecter la pertinence des suggestions automatisées. Cependant, cela présente aussi un avantage : solliciter la mémoire pour se souvenir de l'identité des locuteurs, ce qui est bénéfique pour le cerveau.
-
-
-Concernant le script Python pour l'interaction en temps réel, les commandes initiales 'Amorcer' et 'Neutraliser' ont été sélectionnées pour démarrer et arrêter le processus. Ces commandes sont modifiables directement dans le script. 
-
-Le système est conçu pour fonctionner hors ligne, garantissant ainsi la sécurité des données. En termes de spécifications techniques requises, ce système nécessite au minimum un ordinateur équipé d'un processeur i7 de 11ème génération ou supérieur, ainsi que 8 Go de RAM.
 
 
 
